@@ -5,11 +5,8 @@ class TestLedger < Minitest::Test
     refute_nil ::Coinbase::Ledger::VERSION
   end
 
-  def test_autoloads_web_class
-    refute_nil ::Coinbase::Ledger::Web
-  end
-
-  def test_autoloads_api_class
-    refute_nil ::Coinbase::Ledger::API
+  def test_initializes
+    ledger = ::Coinbase::Ledger.new
+    refute_empty ledger.apps
   end
 end

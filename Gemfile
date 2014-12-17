@@ -7,4 +7,8 @@ gem "grape"
 gem "sinatra"
 gem "garner"
 
-gem "minitest", group: :development
+group :development, :test do
+  gem "dotenv"
+  gem "minitest"
+  gem "fakeweb"
+end
