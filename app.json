@@ -10,6 +10,5 @@
     "COINBASE_API_SECRET": {
       "description": "API secret from Coinbase."
     }
-  },
-
+  }
 }
