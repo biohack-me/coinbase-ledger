@@ -1,8 +1,10 @@
 # Coinbase Ledger
 
-An App to display the Bitcoin balance of a Coinbase account.
+An app to display the Bitcoin balance of a Coinbase account.
 
 Acts as a cached proxy to the balance endpoint of the official Coinbase API.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Development
 

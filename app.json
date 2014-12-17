@@ -1,0 +1,15 @@
+{
+  "name": "Coinbase Ledger",
+  "description": "Cached proxy to publicly display a Coinbase wallet balance",
+  "repository": "https://github.com/biohack-me/bitcoin-ledger",
+  "keywords": ["coinbase", "bitcoin", "proxy"],
+  "env": {
+    "COINBASE_API_KEY": {
+      "description": "API key from Coinbase."
+    },
+    "COINBASE_API_SECRET": {
+      "description": "API secret from Coinbase."
+    }
+  },
+
+}
