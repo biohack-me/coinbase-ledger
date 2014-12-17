@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bitcoin Ledger</title>
+    <style media="screen">
+      body {
+        text-align: center;
+        font-family: "Helvetica", Arial, sans-serif;
+        font-weight: bold;
+        padding-top: 10em;
+        color: #333;
+        font-size: 100%;
+      }
+
+      .balance {
+        font-size: 6em;
+      }
+
+      .disclaimer {
+        font-size: 0.8em;
+      }
+    </style>
+    <script charset="utf-8">
+      document.addEventListener('DOMContentLoaded', function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', encodeURI('api/v1/balance.json'));
+        xhr.onload = function(){
+          var balance = JSON.parse(xhr.responseText);
+          var amount = parseFloat(balance.amount);
+          var currency = balance.currency;
+
+          if (amount < 0.01 && currency === "BTC") {
+            var text = (amount * 1000000.0).toString() + " bits";
+          } else {
+            var text = amount.toString() + " " + currency;
+          }
+
+          document.getElementsByClassName('balance')[0].textContent = text;
+        }
+        xhr.send();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="balance"></div>
+    <div class="disclaimer">
+      Balance can be delayed up to 3 minutes.
+    </div>
+  </body>
+</html>
