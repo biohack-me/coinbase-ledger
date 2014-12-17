@@ -18,6 +18,15 @@
 
       .disclaimer {
         font-size: 0.8em;
+        margin-bottom: 2em;
+      }
+
+      .address {
+        border: 1px solid #333;
+        border-radius: 2px;
+        padding: 4px 10px 3px;
+        display: inline-block;
+        font-family: Menlo, monospace;
       }
     </style>
     <script charset="utf-8">
@@ -46,5 +55,10 @@
     <div class="disclaimer">
       Balance can be delayed up to 3 minutes.
     </div>
+    <% if ENV.key?('BITCOIN_ADDRESS') %>
+      <div class="address">
+        <%= ENV['BITCOIN_ADDRESS'] %>
+      </div>
+    <% end %>
   </body>
 </html>
