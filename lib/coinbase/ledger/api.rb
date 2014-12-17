@@ -20,7 +20,7 @@ class Coinbase::Ledger::API < Grape::API
     end
 
     def cache &block
-      garner.options expires_in: 15.minutes, &block
+      garner.options expires_in: 3.minutes, &block
     end
   end
 
