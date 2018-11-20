@@ -26,7 +26,7 @@ GEM
       json
       multi_json (>= 1.3.0)
       rack
-    grape (1.0.2)
+    grape (1.1.0)
       activesupport
       builder
       mustermann-grape (~> 1.0.0)
@@ -39,7 +39,7 @@ GEM
     json (1.8.6)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
     rack (1.6.11)
@@ -71,7 +71,7 @@ DEPENDENCIES
   dotenv
   fakeweb
   garner
-  grape
+  grape (>= 1.1.0)
   minitest
   rack (~> 1.6.11)
   rack-cors

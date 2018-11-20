@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "rack", "~> 1.6.11"
 gem "rack-cors"
 gem "coinbase"
-gem "grape"
+gem "grape", ">= 1.1.0"
 gem "sinatra"
 gem "garner"
 
