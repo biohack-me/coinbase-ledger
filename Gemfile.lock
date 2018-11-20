@@ -42,7 +42,7 @@ GEM
     mustermann (1.0.2)
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
-    rack (1.5.5)
+    rack (1.6.11)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cors (1.0.2)
@@ -73,7 +73,7 @@ DEPENDENCIES
   garner
   grape
   minitest
-  rack (~> 1.5.4)
+  rack (~> 1.6.11)
   rack-cors
   rack-protection (~> 1.5.5)
   sinatra
